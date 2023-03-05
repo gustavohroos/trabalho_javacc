@@ -1,0 +1,13 @@
+main{
+    var int a;
+    var int b;
+    var int c;
+    a := 10;
+    b := 15;
+    c := 8;
+    var int media;
+    media := (a + b + c)/3;
+    if(media < 7 || media > 10 && a == 10){
+        print(media)
+    }
+}
