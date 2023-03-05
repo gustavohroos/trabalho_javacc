@@ -15,7 +15,10 @@ private static final int jjStopStringLiteralDfa_0(int pos, long active0){
    {
       case 0:
          if ((active0 & 0x1003f8d20L) != 0L)
+         {
+            jjmatchedKind = 34;
             return 10;
+         }
          if ((active0 & 0x800000L) != 0L)
             return 1;
          return -1;
@@ -377,7 +380,7 @@ static private int jjMoveNfa_0(int startState, int curPos)
                   {
                      if (kind > 34)
                         kind = 34;
-                     { jjCheckNAdd(9); }
+                     { jjCheckNAddTwoStates(8, 9); }
                   }
                   if ((0x3ff000000000000L & l) != 0L)
                      { jjCheckNAddTwoStates(8, 9); }
@@ -430,7 +433,7 @@ static private int jjMoveNfa_0(int startState, int curPos)
                      break;
                   if (kind > 34)
                      kind = 34;
-                  { jjCheckNAdd(9); }
+                  { jjCheckNAddTwoStates(8, 9); }
                   break;
                default : break;
             }
@@ -450,15 +453,22 @@ static private int jjMoveNfa_0(int startState, int curPos)
                   {
                      if (kind > 34)
                         kind = 34;
-                     { jjCheckNAdd(9); }
+                     { jjCheckNAddTwoStates(8, 9); }
                   }
                   if ((0x7fffffe07fffffeL & l) != 0L)
+                  {
+                     if (kind > 34)
+                        kind = 34;
                      { jjCheckNAddStates(3, 5); }
+                  }
                   break;
                case 0:
                case 7:
-                  if ((0x7fffffe07fffffeL & l) != 0L)
-                     { jjCheckNAddStates(3, 5); }
+                  if ((0x7fffffe07fffffeL & l) == 0L)
+                     break;
+                  if (kind > 34)
+                     kind = 34;
+                  { jjCheckNAddStates(3, 5); }
                   break;
                case 4:
                   if ((0x2000000020L & l) != 0L)
@@ -473,7 +483,7 @@ static private int jjMoveNfa_0(int startState, int curPos)
                      break;
                   if (kind > 34)
                      kind = 34;
-                  { jjCheckNAdd(9); }
+                  { jjCheckNAddTwoStates(8, 9); }
                   break;
                default : break;
             }
